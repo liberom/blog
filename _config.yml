@@ -28,6 +28,46 @@ collection_order    :
     "portfolio",
   ]
 collections:
+  ruby_and_rails:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Ruby & Rails"
+  javascript:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "JavaScript"
+  python:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Python"
+  shell:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Shell"
+  web3:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Web3"
+  ai_ml:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "AI/ML"
+  databases:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Databases"
+  devops:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "DevOps"
   math:
     output          : true
     permalink       : /:collection/:title/
