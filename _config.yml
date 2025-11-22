@@ -1,10 +1,10 @@
 # 1. Site Settings
 title               : Developer's Corner
 owner               : "Liberom"
-url                : "http://0.0.0.0:4000" # "https://liberom.github.io"
-baseurl            : ""
+url                : "https://liberom.github.io"
+baseurl            : "/blog"
 permalink           : /:title/
-description         : "A hacker-style note-keeping website template."
+description         : "A hacker-style technical blog and learning notes."
 markdown            : kramdown
 statement           : "Designed by DeerRIDER, All Rights Reserved"
 bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
