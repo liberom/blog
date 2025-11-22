@@ -1,81 +1,108 @@
 .header {
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
-  height: auto;
+  height: $header-height;
   z-index: 3;
   border: $secondary-border;
   border-bottom: $medium-border;
+  flex-shrink: 0;
+  background-color: rgba($color-postbg, 0.5);
+  display: flex;
+  align-items: center;
+
   .vertical_center_table {
     width: 100%;
-    height: $header-height; // the real height of header
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
+
   tbody {
     border: none;
   }
+
   td {
     border: none;
     padding: 0;
     vertical-align: middle;
   }
+
   li {
     width: auto;
   }
+
   .nav_bar {
     text-align: left;
-    display: block;
+    display: flex;
     list-style: none;
-    padding: 0px 12px;
-    word-wrap: none;
-    overflow: hidden;
-    white-space: nowrap;
+    padding: 0 12px;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+
     ul {
       padding: 0;
       margin: 0;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
       .li_left {
         list-style: none;
         display: inline-block;
         cursor: pointer;
       }
+
       .span_right {
-        float: right;
+        margin-left: auto;
         cursor: pointer;
         max-width: 60%;
       }
     }
+
     .site_title {
       font-size: $header-btn-text-size;
       @include simple_link_style;
+      white-space: nowrap;
     }
+
     .site_owner {
       font-size: $header-btn-text-size;
       @include simple_link_style;
+      white-space: nowrap;
     }
   }
+
   .header_btn {
-    margin: 0 0.06em 0 0.06em;
-    display: inline-block;
+    margin: 0 0.06em;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
     i {
       @include simple_link_style;
     }
   }
+
   .btn_text {
     font-style: normal;
-    margin: 0;
+    margin: 0 4px;
     display: inline-block;
     text-transform: capitalize;
     font-family: $font-serif;
     font-size: $header-btn-text-size;
   }
+
   .btn_icon {
     font-size: $header-btn-icon-size;
   }
+
   .access_token {
     resize: none;
-    float: right;
+    margin: 0 5px;
     width: 5.5em;
-    display: inline-flexbox;
-    margin: 0px 5px;
+    padding: 2px 4px;
   }
 }
 // screen auto-adjustment

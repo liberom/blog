@@ -1,9 +1,20 @@
 // global base reset
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.75;
   font-size: $font-size-primary;
   color: $color-primary;
   font-family: $font-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 h1 {
   font-size: $font-size-h1;
@@ -71,22 +82,41 @@ button {
   border: $medium-border;
   background-color: rgba($color-postbg, 0.7);
   color: $color-primary;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba($color-postbg, 0.9);
+    border-color: $color-primary;
+  }
 }
-// links
+
+/* Links */
 a {
   color: $color-primary;
   text-decoration: underline dotted rgba($color-primary, 0.4);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-secondary;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba($color-secondary, 0.7);
+  }
 }
-a:hover {
-  color: $color-secondary;
-  text-decoration: none;
-  cursor: pointer;
-}
+
+/* Images */
 img {
   max-width: 95%;
-  margin: 0 auto; // image center align
-  display: block; // image center align
+  height: auto;
+  margin: 12px auto;
+  display: block;
   background-color: whitesmoke;
+  border-radius: 4px;
 }
 ol {
   padding: 0 0 0 1.42em;
